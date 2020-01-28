@@ -1,0 +1,36 @@
+Section Hi.
+
+Theorem W2: forall A B C D: Prop ,
+  A -> (A /\ B) /\ C.
+  intros.
+  split.
+  -
+  split.
+  --
+  trivial.
+  --
+  admit.
+  -
+  admit.
+
+
+Goal exists n : nat, n = n.
+eexists ?[x].
+reflexivity.
+[x]: exact 0.
+Qed.
+
+(* (* "*)" *) *)
+
+(* Axiom X:True.A. *)
+Ltac name_goal name := refine ?[name].
+Theorem A: forall n, n + 0 = n.	tk
+induction n ; [refine ?[wow__わお__wow''] | refine ?[step]].
+(**)[(**)wow__わお__wow''(* *)](*" *) ""*)" *):
+	(**){(**)simpl. admit. (* (* " *) """ *) *)}(**)
+	[step] : {
+		admit.
+	}
+Admitted.
+
+End Hi.

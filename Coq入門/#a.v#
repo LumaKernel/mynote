@@ -1,0 +1,14 @@
+Variable A:Prop.
+
+Theorem あWい2ぐ: forall う B C D: Prop ,
+  う -> (う /\ B) /\ C.
+  
+  
+  intros.
+  split.
+Focus 2. { admit. } Unfocus.
+  (**)2:(**){
+    admit.
+  }
+  {admit. }
+Admitted.

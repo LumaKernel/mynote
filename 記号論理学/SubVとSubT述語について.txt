@@ -1,0 +1,6 @@
+[?
+𝔖𝔲𝔟𝔙 (\mathfrak{SubV}) 述語は sub variable だろうか
+(p.238)
+𝔖𝔲𝔟𝔗 (\mathfrak{SubT}) 述語は sub term かな
+(p.243)
+]

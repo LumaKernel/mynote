@@ -1,0 +1,10 @@
+公理の略称，(～I) (～E) 系は ～Introduction, ～Eliminationに対応していそう
+S,K,B,C,W,B',C*はよくわからない
+
+IはIdempotent lawだと思う．
+LNCはLaw of Non-Contradiction
+
+以下はラテン語から
+RAAはreductio ad absurdum (reduction to absurdity)
+EFQはex falso quadlibet (from falsefood, anything( follows))
+CMはconsequentia mirabilis (admirable consequence)

@@ -1,0 +1,15 @@
+LK，NK，LJ，NJはドイツ語に由来 (p. 297)
+
+LK logistischer klassischer Kalkül
+NK natürlicher klassischer Kalkül
+LJ logistischer intuitionistischer Kalkül
+NJ natürlicher intuitionistischer Kalkül
+
+German to English
+logistischer = logistic
+natürlicher = naturally
+klassischer = classical
+intuitionistischer = intuitionistic
+Kalkül = calculus
+
+[? なんでJなん？知らん．]

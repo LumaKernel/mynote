@@ -1,0 +1,11 @@
+
+Variable A B : Type.
+Variable f : A -> Scheme new_scheme := Induction for _ Sort _
+with _ := Induction for _ Sort _.
+B.
+Notation "{ a" := (f a) (at level 50).
+
+Goal B.
+  refine ?[はい].
+  [はい] : { admit. }
+  [はい] : refine { _ .

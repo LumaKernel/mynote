@@ -1,0 +1,8 @@
+
+Add LoadPath "~/mystudy/Coq入門".
+
+
+Require Import coq98_hoge.
+
+Print A.
+

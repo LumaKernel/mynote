@@ -1,0 +1,15 @@
+(*
+
+引き続き，以下を参考に
+http://herb.h.kobe-u.ac.jp/coq/coq.pdf
+
+*)
+
+Add LoadPath "~/mystudy/Coq入門".
+
+Require Import Shugo.
+
+Print Shugo.
+
+Section Image.
+

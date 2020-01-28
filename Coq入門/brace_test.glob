@@ -1,0 +1,11 @@
+DIGEST 45295d54fd812d817f380eadee25442b
+Fbrace_test
+var 10:10 <> A
+var 12:12 <> B
+var 31:31 <> f
+R36:39 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40:40 brace_test <> B defax
+R35:35 brace_test <> A defax
+R65:65 brace_test <> f defax
+not 52:52 <> :::'(*'_x
+R91:91 brace_test <> B defax

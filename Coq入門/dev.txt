@@ -1,0 +1,100 @@
+
+C:/Coq8.10/bin/coqidetop -main-channel stdfds
+/c/Coq8.10/bin/coqidetop -main-channel stdfds
+C:/Coq8.10/bin/coqc -w "-all" C:/Users/luma/mystudy/Coq入門/brace_test
+C:/Coq8.10/bin/coqc -w "-all" C:\Users\luma\.cache\dein\repos\github.com\LumaKernel\coquille\dev\coq-examples/eg_proof_handling.v
+<call val="Init"><option val="none" /></call>
+<call val="Edit_at"><state_id val="1"/></call>
+<call val="SetOptions"><list><pair><list><string>Diffs</string></list><option_value val="stringvalue"><string>on</string></option_value></pair></list></call>
+<call val="Add"><pair>
+    <pair>
+      <string>Goal </string>
+      <int>${editId}</int>
+    </pair>
+    <pair>
+      <state_id val="${stateId}"/>
+      <bool val="${verbose}"/>
+    </pair>
+  </pair></call>
+
+<call val="Annotate"><string>Theorem plus_0_r : forall n : nat, n + 0 = n.</string></cal>
+
+<call val="Annotate"><string>A (* *) b.</string></call>
+<call val="Annotate"><string>A (* *) b. C . DD DD .</string></call>
+<call val="Annotate"><string>[x]: b. ffoo.</string></call>
+<call val="Annotate"><string>[x]: { . ahaha.</string></call>
+
+<call val="Add"><pair>
+    <pair>
+      <string>
+Open Scope string_scope. 
+</string>
+      <int>0</int>
+    </pair>
+    <pair>
+      <state_id val="2"/>
+      <bool val="true"/>
+    </pair>
+  </pair></call>
+
+<call val="Add"><pair>
+    <pair>
+      <string>
+Variable f : A -&gt; B.
+</string>
+      <int>0</int>
+    </pair>
+    <pair>
+      <state_id val="2"/>
+      <bool val="true"/>
+    </pair>
+  </pair></call>
+
+
+<call val="Add"><pair>
+    <pair>
+      <string>
+Goal B.
+
+</string>
+      <int>0</int>
+    </pair>
+    <pair>
+      <state_id val="3"/>
+      <bool val="true"/>
+    </pair>
+  </pair></call>
+
+Variable f : A -&gt; B.
+(* Notation "{ ( a }  ) ." := (f a) (at level 50). *)
+(* Notation "{ ( a }" := (f a) (at level 40). *)
+Goal B.
+
+<call val="Add"><pair>
+    <pair>
+      <string>
+Notation "{ ( a }  ) ." := (f a) (at level 50).
+</string>
+      <int>0</int>
+    </pair>
+    <pair>
+      <state_id val="4"/>
+      <bool val="false"/>
+    </pair>
+  </pair></call>
+
+<call val="PrintAst"><state_id val="3"/></call>
+<call val="Status"><bool val="true"/></call>
+
+<call val="Annotate"><string> Variable A B : Type. </string></call>
+<call val="Annotate"><string> Notation " "" a " := (f a) (at level 50).</string></call>
+<call val="Annotate"><string> refine( {
+( _ } ) . ) . . . . . .</string></call>
+<call val="Annotate"><string> Goal B. refine _.</string></call>
+
+
+
+
+
+
+

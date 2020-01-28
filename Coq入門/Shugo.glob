@@ -1,0 +1,718 @@
+DIGEST 84ece8aac759fb5584288bacb0dfa69d
+FShugo
+sec 218:226 <> Ensembles
+var 240:240 Ensembles U
+def 264:271 <> Ensemble
+R277:280 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R276:276 Shugo <> Ensembles.U var
+def 301:302 <> In
+R307:314 Shugo <> Ensemble def
+R320:320 Shugo <> Ensembles.U var
+R333:333 Shugo <> A var
+R335:335 Shugo <> x var
+def 352:359 <> Included
+R366:373 Shugo <> Ensemble def
+R395:395 Shugo <> Ensembles.U var
+R404:407 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R408:409 Shugo <> In def
+R413:413 Shugo <> x var
+R411:411 Shugo <> C var
+R398:399 Shugo <> In def
+R403:403 Shugo <> x var
+R401:401 Shugo <> B var
+ind 429:437 <> Empty_set
+R441:448 Shugo <> Ensemble def
+ind 467:474 <> Full_set
+constr 494:503 <> Full_intro
+R478:485 Shugo <> Ensemble def
+R516:516 Shugo <> Ensembles.U var
+R519:520 Shugo <> In def
+R531:531 Shugo <> x var
+R522:529 Shugo <> Full_set ind
+ind 794:802 <> Singleton
+constr 828:839 <> In_singleton
+R807:807 Shugo <> Ensembles.U var
+R812:819 Shugo <> Ensemble def
+R843:844 Shugo <> In def
+R860:860 Shugo <> x var
+R847:855 Shugo <> Singleton ind
+R857:857 Shugo <> x var
+ind 876:880 <> Union
+constr 917:928 <> Union_introl
+constr 977:988 <> Union_intror
+R887:894 Shugo <> Ensemble def
+R899:906 Shugo <> Ensemble def
+R941:941 Shugo <> Ensembles.U var
+R950:953 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R954:955 Shugo <> In def
+R969:969 Shugo <> x var
+R958:962 Shugo <> Union ind
+R966:966 Shugo <> C var
+R964:964 Shugo <> B var
+R944:945 Shugo <> In def
+R949:949 Shugo <> x var
+R947:947 Shugo <> B var
+R1001:1001 Shugo <> Ensembles.U var
+R1010:1013 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1014:1015 Shugo <> In def
+R1029:1029 Shugo <> x var
+R1018:1022 Shugo <> Union ind
+R1026:1026 Shugo <> C var
+R1024:1024 Shugo <> B var
+R1004:1005 Shugo <> In def
+R1009:1009 Shugo <> x var
+R1007:1007 Shugo <> C var
+def 1046:1048 <> Add
+R1053:1060 Shugo <> Ensemble def
+R1066:1066 Shugo <> Ensembles.U var
+R1071:1078 Shugo <> Ensemble def
+R1083:1087 Shugo <> Union ind
+R1092:1100 Shugo <> Singleton ind
+R1102:1102 Shugo <> x var
+R1089:1089 Shugo <> B var
+ind 1119:1130 <> Intersection
+constr 1165:1182 <> Intersection_intro
+R1137:1144 Shugo <> Ensemble def
+R1149:1156 Shugo <> Ensemble def
+R1199:1199 Shugo <> Ensembles.U var
+R1208:1211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1218:1221 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1222:1223 Shugo <> In def
+R1244:1244 Shugo <> x var
+R1226:1237 Shugo <> Intersection ind
+R1241:1241 Shugo <> C var
+R1239:1239 Shugo <> B var
+R1212:1213 Shugo <> In def
+R1217:1217 Shugo <> x var
+R1215:1215 Shugo <> C var
+R1202:1203 Shugo <> In def
+R1207:1207 Shugo <> x var
+R1205:1205 Shugo <> B var
+ind 1260:1265 <> Couple
+constr 1295:1302 <> Couple_l
+constr 1330:1337 <> Couple_r
+R1272:1272 Shugo <> Ensembles.U var
+R1277:1284 Shugo <> Ensemble def
+R1306:1307 Shugo <> In def
+R1322:1322 Shugo <> x var
+R1310:1315 Shugo <> Couple ind
+R1319:1319 Shugo <> y var
+R1317:1317 Shugo <> x var
+R1341:1342 Shugo <> In def
+R1357:1357 Shugo <> y var
+R1345:1350 Shugo <> Couple ind
+R1354:1354 Shugo <> y var
+R1352:1352 Shugo <> x var
+ind 1373:1378 <> Triple
+constr 1410:1417 <> Triple_l
+constr 1447:1454 <> Triple_m
+constr 1484:1491 <> Triple_r
+R1387:1387 Shugo <> Ensembles.U var
+R1392:1399 Shugo <> Ensemble def
+R1421:1422 Shugo <> In def
+R1439:1439 Shugo <> x var
+R1425:1430 Shugo <> Triple ind
+R1436:1436 Shugo <> z var
+R1434:1434 Shugo <> y var
+R1432:1432 Shugo <> x var
+R1458:1459 Shugo <> In def
+R1476:1476 Shugo <> y var
+R1462:1467 Shugo <> Triple ind
+R1473:1473 Shugo <> z var
+R1471:1471 Shugo <> y var
+R1469:1469 Shugo <> x var
+R1495:1496 Shugo <> In def
+R1513:1513 Shugo <> z var
+R1499:1504 Shugo <> Triple ind
+R1510:1510 Shugo <> z var
+R1508:1508 Shugo <> y var
+R1506:1506 Shugo <> x var
+def 1530:1539 <> Complement
+R1544:1551 Shugo <> Ensemble def
+R1556:1563 Shugo <> Ensemble def
+R1574:1574 Shugo <> Ensembles.U var
+R1579:1580 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1581:1582 Shugo <> In def
+R1586:1586 Shugo <> x var
+R1584:1584 Shugo <> A var
+def 1603:1610 <> Setminus
+R1617:1624 Shugo <> Ensemble def
+R1629:1636 Shugo <> Ensemble def
+R1651:1651 Shugo <> Ensembles.U var
+R1662:1665 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1656:1657 Shugo <> In def
+R1661:1661 Shugo <> x var
+R1659:1659 Shugo <> B var
+R1666:1667 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1668:1669 Shugo <> In def
+R1673:1673 Shugo <> x var
+R1671:1671 Shugo <> C var
+def 1690:1697 <> Subtract
+R1702:1709 Shugo <> Ensemble def
+R1715:1715 Shugo <> Ensembles.U var
+R1720:1727 Shugo <> Ensemble def
+R1732:1739 Shugo <> Setminus def
+R1744:1752 Shugo <> Singleton ind
+R1754:1754 Shugo <> x var
+R1741:1741 Shugo <> B var
+ind 1771:1778 <> Disjoint
+constr 1809:1822 <> Disjoint_intro
+R1785:1792 Shugo <> Ensemble def
+R1826:1826 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1864:1868 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1869:1876 Shugo <> Disjoint ind
+R1880:1880 Shugo <> C var
+R1878:1878 Shugo <> B var
+R1836:1836 Shugo <> Ensembles.U var
+R1839:1840 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1841:1842 Shugo <> In def
+R1863:1863 Shugo <> x var
+R1845:1856 Shugo <> Intersection ind
+R1860:1860 Shugo <> C var
+R1858:1858 Shugo <> B var
+ind 1896:1904 <> Inhabited
+constr 1933:1947 <> Inhabited_intro
+R1909:1916 Shugo <> Ensemble def
+R1960:1960 Shugo <> Ensembles.U var
+R1969:1972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1973:1981 Shugo <> Inhabited ind
+R1983:1983 Shugo <> B var
+R1963:1964 Shugo <> In def
+R1968:1968 Shugo <> x var
+R1966:1966 Shugo <> B var
+def 2000:2014 <> Strict_Included
+R2021:2028 Shugo <> Ensemble def
+R2053:2056 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2041:2048 Shugo <> Included def
+R2052:2052 Shugo <> C var
+R2050:2050 Shugo <> B var
+R2058:2061 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R2057:2057 Shugo <> B var
+R2062:2062 Shugo <> C var
+def 2079:2086 <> Same_set
+R2093:2100 Shugo <> Ensemble def
+R2125:2128 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2113:2120 Shugo <> Included def
+R2124:2124 Shugo <> C var
+R2122:2122 Shugo <> B var
+R2129:2136 Shugo <> Included def
+R2140:2140 Shugo <> B var
+R2138:2138 Shugo <> C var
+ax 2180:2203 <> Extensionality_Ensembles
+R2218:2225 Shugo <> Ensemble def
+R2240:2243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2245:2247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2244:2244 Shugo <> A var
+R2248:2248 Shugo <> B var
+R2228:2235 Shugo <> Same_set def
+R2239:2239 Shugo <> B var
+R2237:2237 Shugo <> A var
+R2256:2264 Shugo Ensembles <> sec
+R2280:2281 Shugo <> In def
+R2283:2290 Shugo <> Included def
+R2292:2299 Shugo <> Same_set def
+R2301:2315 Shugo <> Strict_Included def
+R2317:2319 Shugo <> Add def
+R2321:2328 Shugo <> Setminus def
+R2330:2337 Shugo <> Subtract def
+R2530:2538 Coq.Logic.Classical <> <> lib
+sec 2550:2560 <> MyClassical
+var 2572:2572 MyClassical A
+var 2574:2574 MyClassical B
+prf 2589:2594 <> Taiguu
+R2597:2597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2606:2611 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2618:2618 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2613:2616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2617:2617 Shugo <> MyClassical.B var
+R2612:2612 Shugo <> MyClassical.A var
+R2600:2603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2604:2604 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2605:2605 Shugo <> MyClassical.A var
+R2598:2598 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2599:2599 Shugo <> MyClassical.B var
+R2646:2649 Coq.Logic.Classical_Prop <> NNPP thm
+R2646:2649 Coq.Logic.Classical_Prop <> NNPP thm
+R2737:2747 Shugo MyClassical <> sec
+sec 2760:2768 <> SetTheory
+R2829:2832 Coq.Logic.Classical_Prop <> NNPP thm
+var 2852:2852 SetTheory U
+syndef 2870:2874 <> Shugo
+R2880:2887 Shugo <> Ensemble def
+R2889:2889 Shugo <> SetTheory.U var
+R2917:2918 Shugo <> In def
+R2920:2920 Shugo <> SetTheory.U var
+not 2903:2903 SetTheory :::x_'∈'_x
+R2983:2990 Shugo <> Included def
+R2992:2992 Shugo <> SetTheory.U var
+not 2969:2969 SetTheory :::x_'⊆'_x
+R3055:3066 Shugo <> Intersection ind
+R3068:3068 Shugo <> SetTheory.U var
+not 3041:3041 SetTheory :::x_'∩'_x
+R3134:3138 Shugo <> Union ind
+R3140:3140 Shugo <> SetTheory.U var
+not 3120:3120 SetTheory :::x_'∪'_x
+syndef 3192:3193 <> φ
+R3199:3207 Shugo <> Empty_set ind
+R3209:3209 Shugo <> SetTheory.U var
+syndef 3222:3223 <> Ω
+R3229:3236 Shugo <> Full_set ind
+R3238:3238 Shugo <> SetTheory.U var
+prf 3250:3258 <> in_or_not
+R3281:3281 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3288:3292 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3283:3286 Shugo SetTheory :::x_'∈'_x not
+R3287:3287 Shugo <> A var
+R3282:3282 Shugo <> x var
+R3293:3295 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3303:3303 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3297:3301 Shugo SetTheory :::x_'∈'_x not
+R3302:3302 Shugo <> A var
+R3296:3296 Shugo <> x var
+R3331:3337 Coq.Logic.Classical_Prop <> classic prfax
+R3331:3337 Coq.Logic.Classical_Prop <> classic prfax
+R3352:3360 Shugo <> in_or_not thm
+var 3404:3404 SetTheory A
+var 3406:3406 SetTheory B
+var 3408:3408 SetTheory C
+var 3410:3410 SetTheory D
+R3413:3417 Shugo <> Shugo syndef
+prf 3427:3442 <> bubun_transitive
+R3469:3472 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3474:3478 Shugo SetTheory :::x_'⊆'_x not
+R3473:3473 Shugo <> SetTheory.A var
+R3479:3479 Shugo <> SetTheory.C var
+R3447:3447 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3455:3460 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3468:3468 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3449:3453 Shugo SetTheory :::x_'⊆'_x not
+R3448:3448 Shugo <> SetTheory.A var
+R3454:3454 Shugo <> SetTheory.B var
+R3462:3466 Shugo SetTheory :::x_'⊆'_x not
+R3461:3461 Shugo <> SetTheory.B var
+R3467:3467 Shugo <> SetTheory.C var
+R3498:3505 Shugo <> Included def
+R3604:3611 Shugo <> Included def
+prf 3629:3639 <> empty_bubun
+R3654:3658 Shugo SetTheory :::x_'⊆'_x not
+R3652:3653 Shugo <> φ syndef
+R3659:3659 Shugo <> A var
+prf 3773:3782 <> bubun_full
+R3796:3800 Shugo SetTheory :::x_'⊆'_x not
+R3795:3795 Shugo <> A var
+R3801:3802 Shugo <> Ω syndef
+R3839:3848 Shugo <> Full_intro constr
+R3859:3868 Shugo <> Full_intro constr
+R3859:3868 Shugo <> Full_intro constr
+R3893:3894 Shugo <> Ω syndef
+R3903:3910 Shugo <> Full_set ind
+R3919:3926 Shugo <> Full_set ind
+R3943:3944 Shugo <> Ω syndef
+R3955:3956 Shugo <> Ω syndef
+R3967:3990 Shugo <> Extensionality_Ensembles prfax
+R3999:4006 Shugo <> Same_set def
+R4017:4024 Shugo <> Ensemble def
+R4026:4026 Shugo <> SetTheory.U var
+R4035:4042 Shugo <> Same_set def
+R4070:4070 Shugo <> U var
+R4076:4076 Shugo <> a var
+R4165:4188 Shugo <> Extensionality_Ensembles prfax
+R4198:4205 Shugo <> Same_set def
+prf 4222:4229 <> union_id
+R4232:4232 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4238:4241 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4234:4236 Shugo SetTheory :::x_'∪'_x not
+R4233:4233 Shugo <> SetTheory.A var
+R4237:4237 Shugo <> SetTheory.A var
+R4242:4242 Shugo <> SetTheory.A var
+R4260:4283 Shugo <> Extensionality_Ensembles prfax
+R4260:4283 Shugo <> Extensionality_Ensembles prfax
+R4295:4302 Shugo <> Same_set def
+R4331:4342 Shugo <> Union_introl constr
+R4353:4354 Shugo <> In def
+R4398:4409 Shugo <> Union_introl constr
+R4398:4409 Shugo <> Union_introl constr
+prf 4431:4440 <> union_comm
+R4443:4443 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4449:4453 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4459:4459 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4445:4447 Shugo SetTheory :::x_'∪'_x not
+R4444:4444 Shugo <> SetTheory.A var
+R4448:4448 Shugo <> SetTheory.B var
+R4455:4457 Shugo SetTheory :::x_'∪'_x not
+R4454:4454 Shugo <> SetTheory.B var
+R4458:4458 Shugo <> SetTheory.A var
+R4509:4520 Shugo <> Union_intror constr
+R4509:4520 Shugo <> Union_intror constr
+R4535:4546 Shugo <> Union_introl constr
+R4535:4546 Shugo <> Union_introl constr
+R4584:4595 Shugo <> Union_intror constr
+R4584:4595 Shugo <> Union_intror constr
+R4610:4621 Shugo <> Union_introl constr
+R4610:4621 Shugo <> Union_introl constr
+prf 4640:4650 <> union_assoc
+R4664:4664 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4654:4657 Shugo SetTheory :::x_'∪'_x not
+R4663:4663 Shugo SetTheory :::x_'∪'_x not
+R4653:4653 Shugo <> SetTheory.A var
+R4659:4661 Shugo SetTheory :::x_'∪'_x not
+R4658:4658 Shugo <> SetTheory.B var
+R4662:4662 Shugo <> SetTheory.C var
+R4665:4665 Shugo SetTheory :::x_'∪'_x not
+R4671:4674 Shugo SetTheory :::x_'∪'_x not
+R4667:4669 Shugo SetTheory :::x_'∪'_x not
+R4666:4666 Shugo <> SetTheory.A var
+R4670:4670 Shugo <> SetTheory.B var
+R4675:4675 Shugo <> SetTheory.C var
+R4723:4734 Shugo <> Union_introl constr
+R4723:4734 Shugo <> Union_introl constr
+R4745:4756 Shugo <> Union_introl constr
+R4745:4756 Shugo <> Union_introl constr
+R4794:4805 Shugo <> Union_introl constr
+R4794:4805 Shugo <> Union_introl constr
+R4816:4827 Shugo <> Union_intror constr
+R4816:4827 Shugo <> Union_intror constr
+R4842:4853 Shugo <> Union_intror constr
+R4842:4853 Shugo <> Union_intror constr
+R4905:4916 Shugo <> Union_introl constr
+R4905:4916 Shugo <> Union_introl constr
+R4931:4942 Shugo <> Union_intror constr
+R4931:4942 Shugo <> Union_intror constr
+R4953:4964 Shugo <> Union_introl constr
+R4953:4964 Shugo <> Union_introl constr
+R4979:4990 Shugo <> Union_intror constr
+R4979:4990 Shugo <> Union_intror constr
+R5001:5012 Shugo <> Union_intror constr
+R5001:5012 Shugo <> Union_intror constr
+prf 5032:5046 <> union_includedl
+R5050:5054 Shugo SetTheory :::x_'⊆'_x not
+R5049:5049 Shugo <> SetTheory.A var
+R5056:5058 Shugo SetTheory :::x_'∪'_x not
+R5055:5055 Shugo <> SetTheory.A var
+R5059:5059 Shugo <> SetTheory.B var
+R5086:5097 Shugo <> Union_introl constr
+R5086:5097 Shugo <> Union_introl constr
+prf 5116:5130 <> union_includedr
+R5134:5138 Shugo SetTheory :::x_'⊆'_x not
+R5133:5133 Shugo <> SetTheory.B var
+R5140:5142 Shugo SetTheory :::x_'∪'_x not
+R5139:5139 Shugo <> SetTheory.A var
+R5143:5143 Shugo <> SetTheory.B var
+R5170:5181 Shugo <> Union_intror constr
+R5170:5181 Shugo <> Union_intror constr
+prf 5200:5210 <> union_intro
+R5231:5234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5242:5246 Shugo SetTheory :::x_'⊆'_x not
+R5236:5240 Shugo SetTheory :::x_'∪'_x not
+R5235:5235 Shugo <> SetTheory.A var
+R5241:5241 Shugo <> SetTheory.B var
+R5247:5247 Shugo <> SetTheory.C var
+R5220:5223 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5214:5218 Shugo SetTheory :::x_'⊆'_x not
+R5213:5213 Shugo <> SetTheory.A var
+R5219:5219 Shugo <> SetTheory.C var
+R5225:5229 Shugo SetTheory :::x_'⊆'_x not
+R5224:5224 Shugo <> SetTheory.B var
+R5230:5230 Shugo <> SetTheory.C var
+R5299:5306 Shugo <> Included def
+R5323:5330 Shugo <> Included def
+prf 5409:5411 <> Kuu
+R5428:5432 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5414:5421 Shugo <> Disjoint ind
+R5427:5427 Shugo <> SetTheory.B var
+R5425:5425 Shugo <> SetTheory.A var
+R5423:5423 Shugo <> SetTheory.U var
+R5433:5433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5441:5444 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5435:5439 Shugo SetTheory :::x_'∩'_x not
+R5434:5434 Shugo <> SetTheory.A var
+R5440:5440 Shugo <> SetTheory.B var
+R5445:5446 Shugo <> φ syndef
+R5545:5552 Shugo <> Disjoint ind
+R5639:5652 Shugo <> Disjoint_intro constr
+R5639:5652 Shugo <> Disjoint_intro constr
+prf 5818:5834 <> set_distribute_or
+R5848:5850 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5838:5841 Shugo SetTheory :::x_'∪'_x not
+R5847:5847 Shugo SetTheory :::x_'∪'_x not
+R5837:5837 Shugo <> SetTheory.A var
+R5843:5845 Shugo SetTheory :::x_'∩'_x not
+R5842:5842 Shugo <> SetTheory.B var
+R5846:5846 Shugo <> SetTheory.C var
+R5851:5851 Shugo SetTheory :::x_'∩'_x not
+R5857:5861 Shugo SetTheory :::x_'∩'_x not
+R5867:5867 Shugo SetTheory :::x_'∩'_x not
+R5853:5855 Shugo SetTheory :::x_'∪'_x not
+R5852:5852 Shugo <> SetTheory.A var
+R5856:5856 Shugo <> SetTheory.B var
+R5863:5865 Shugo SetTheory :::x_'∪'_x not
+R5862:5862 Shugo <> SetTheory.A var
+R5866:5866 Shugo <> SetTheory.C var
+R5926:5943 Shugo <> Intersection_intro constr
+R5926:5943 Shugo <> Intersection_intro constr
+R5960:5971 Shugo <> Union_introl constr
+R5960:5971 Shugo <> Union_introl constr
+R5992:6003 Shugo <> Union_introl constr
+R5992:6003 Shugo <> Union_introl constr
+R6037:6054 Shugo <> Intersection_intro constr
+R6037:6054 Shugo <> Intersection_intro constr
+R6071:6082 Shugo <> Union_intror constr
+R6071:6082 Shugo <> Union_intror constr
+R6103:6114 Shugo <> Union_intror constr
+R6103:6114 Shugo <> Union_intror constr
+R6175:6186 Shugo <> Union_introl constr
+R6175:6186 Shugo <> Union_introl constr
+R6227:6238 Shugo <> Union_introl constr
+R6227:6238 Shugo <> Union_introl constr
+R6259:6270 Shugo <> Union_intror constr
+R6259:6270 Shugo <> Union_intror constr
+R6281:6298 Shugo <> Intersection_intro constr
+R6281:6298 Shugo <> Intersection_intro constr
+prf 6321:6338 <> set_distribute_and
+R6352:6354 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6342:6345 Shugo SetTheory :::x_'∩'_x not
+R6351:6351 Shugo SetTheory :::x_'∩'_x not
+R6341:6341 Shugo <> SetTheory.A var
+R6347:6349 Shugo SetTheory :::x_'∪'_x not
+R6346:6346 Shugo <> SetTheory.B var
+R6350:6350 Shugo <> SetTheory.C var
+R6355:6355 Shugo SetTheory :::x_'∪'_x not
+R6361:6365 Shugo SetTheory :::x_'∪'_x not
+R6371:6371 Shugo SetTheory :::x_'∪'_x not
+R6357:6359 Shugo SetTheory :::x_'∩'_x not
+R6356:6356 Shugo <> SetTheory.A var
+R6360:6360 Shugo <> SetTheory.B var
+R6367:6369 Shugo SetTheory :::x_'∩'_x not
+R6366:6366 Shugo <> SetTheory.A var
+R6370:6370 Shugo <> SetTheory.C var
+R6445:6456 Shugo <> Union_introl constr
+R6445:6456 Shugo <> Union_introl constr
+R6467:6484 Shugo <> Intersection_intro constr
+R6467:6484 Shugo <> Intersection_intro constr
+R6520:6531 Shugo <> Union_intror constr
+R6520:6531 Shugo <> Union_intror constr
+R6542:6559 Shugo <> Intersection_intro constr
+R6542:6559 Shugo <> Intersection_intro constr
+R6636:6653 Shugo <> Intersection_intro constr
+R6636:6653 Shugo <> Intersection_intro constr
+R6668:6679 Shugo <> Union_introl constr
+R6668:6679 Shugo <> Union_introl constr
+R6719:6736 Shugo <> Intersection_intro constr
+R6719:6736 Shugo <> Intersection_intro constr
+R6751:6762 Shugo <> Union_intror constr
+R6751:6762 Shugo <> Union_intror constr
+prf 6781:6801 <> set_absorption_or_and
+R6815:6817 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6805:6808 Shugo SetTheory :::x_'∪'_x not
+R6814:6814 Shugo SetTheory :::x_'∪'_x not
+R6804:6804 Shugo <> SetTheory.A var
+R6810:6812 Shugo SetTheory :::x_'∩'_x not
+R6809:6809 Shugo <> SetTheory.A var
+R6813:6813 Shugo <> SetTheory.B var
+R6818:6818 Shugo <> SetTheory.A var
+R6907:6918 Shugo <> Union_introl constr
+R6907:6918 Shugo <> Union_introl constr
+prf 6937:6957 <> set_absorption_and_or
+R6971:6973 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6961:6964 Shugo SetTheory :::x_'∩'_x not
+R6970:6970 Shugo SetTheory :::x_'∩'_x not
+R6960:6960 Shugo <> SetTheory.A var
+R6966:6968 Shugo SetTheory :::x_'∪'_x not
+R6965:6965 Shugo <> SetTheory.A var
+R6969:6969 Shugo <> SetTheory.B var
+R6974:6974 Shugo <> SetTheory.A var
+R7045:7062 Shugo <> Intersection_intro constr
+R7045:7062 Shugo <> Intersection_intro constr
+R7087:7098 Shugo <> Union_introl constr
+R7087:7098 Shugo <> Union_introl constr
+prf 7135:7137 <> A7R
+R7145:7148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7154:7157 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7163:7163 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7159:7161 Shugo SetTheory :::x_'∪'_x not
+R7158:7158 Shugo <> SetTheory.A var
+R7162:7162 Shugo <> SetTheory.B var
+R7165:7167 Shugo SetTheory :::x_'∩'_x not
+R7164:7164 Shugo <> SetTheory.B var
+R7168:7168 Shugo <> SetTheory.C var
+R7150:7152 Shugo SetTheory :::x_'⊆'_x not
+R7149:7149 Shugo <> SetTheory.B var
+R7153:7153 Shugo <> SetTheory.C var
+R7141:7143 Shugo SetTheory :::x_'⊆'_x not
+R7140:7140 Shugo <> SetTheory.A var
+R7144:7144 Shugo <> SetTheory.B var
+R7197:7204 Shugo <> Included def
+R7221:7228 Shugo <> Included def
+R7287:7304 Shugo <> Intersection_intro constr
+R7287:7304 Shugo <> Intersection_intro constr
+R7424:7441 Shugo <> Intersection_intro constr
+R7424:7441 Shugo <> Intersection_intro constr
+R7534:7545 Shugo <> Union_intror constr
+R7534:7545 Shugo <> Union_intror constr
+prf 7568:7570 <> A7L
+R7584:7587 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7593:7596 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7589:7591 Shugo SetTheory :::x_'⊆'_x not
+R7588:7588 Shugo <> SetTheory.A var
+R7592:7592 Shugo <> SetTheory.B var
+R7598:7600 Shugo SetTheory :::x_'⊆'_x not
+R7597:7597 Shugo <> SetTheory.B var
+R7601:7601 Shugo <> SetTheory.C var
+R7578:7578 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7574:7576 Shugo SetTheory :::x_'∪'_x not
+R7573:7573 Shugo <> SetTheory.A var
+R7577:7577 Shugo <> SetTheory.B var
+R7580:7582 Shugo SetTheory :::x_'∩'_x not
+R7579:7579 Shugo <> SetTheory.B var
+R7583:7583 Shugo <> SetTheory.C var
+R7650:7654 Shugo SetTheory :::x_'∈'_x not
+R7656:7660 Shugo SetTheory :::x_'∪'_x not
+R7655:7655 Shugo <> SetTheory.A var
+R7661:7661 Shugo <> SetTheory.B var
+R7650:7654 Shugo SetTheory :::x_'∈'_x not
+R7656:7660 Shugo SetTheory :::x_'∪'_x not
+R7655:7655 Shugo <> SetTheory.A var
+R7661:7661 Shugo <> SetTheory.B var
+R7673:7684 Shugo <> Union_introl constr
+R7673:7684 Shugo <> Union_introl constr
+R7756:7760 Shugo SetTheory :::x_'∈'_x not
+R7762:7766 Shugo SetTheory :::x_'∪'_x not
+R7761:7761 Shugo <> SetTheory.A var
+R7767:7767 Shugo <> SetTheory.B var
+R7756:7760 Shugo SetTheory :::x_'∈'_x not
+R7762:7766 Shugo SetTheory :::x_'∪'_x not
+R7761:7761 Shugo <> SetTheory.A var
+R7767:7767 Shugo <> SetTheory.B var
+R7779:7790 Shugo <> Union_intror constr
+R7779:7790 Shugo <> Union_intror constr
+R7868:7875 Shugo <> Setminus def
+R7877:7877 Shugo <> SetTheory.U var
+not 7856:7856 SetTheory :::x_'\'_x
+prf 7924:7931 <> setminus
+R7946:7946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7954:7959 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7987:7987 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7970:7974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7986:7986 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7976:7981 Shugo SetTheory :::x_'∈'_x not
+R7985:7985 Shugo SetTheory :::x_'∈'_x not
+R7983:7983 Shugo SetTheory :::x_'\'_x not
+R7982:7982 Shugo <> SetTheory.A var
+R7984:7984 Shugo <> SetTheory.B var
+R7975:7975 Shugo <> x var
+R7960:7961 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7969:7969 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7963:7967 Shugo SetTheory :::x_'∈'_x not
+R7968:7968 Shugo <> SetTheory.B var
+R7962:7962 Shugo <> x var
+R7948:7952 Shugo SetTheory :::x_'∈'_x not
+R7953:7953 Shugo <> SetTheory.A var
+R7947:7947 Shugo <> x var
+R8016:8017 Shugo <> In def
+R8029:8036 Shugo <> Setminus def
+R8080:8082 Coq.Init.Logic <> eq ind
+R8091:8092 Coq.Init.Logic <> eq ind
+prf 8102:8107 <> probA8
+R8110:8110 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8130:8133 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8111:8111 Shugo SetTheory :::x_'∪'_x not
+R8117:8123 Shugo SetTheory :::x_'∪'_x not
+R8129:8129 Shugo SetTheory :::x_'∪'_x not
+R8113:8115 Shugo SetTheory :::x_'\'_x not
+R8112:8112 Shugo <> SetTheory.A var
+R8116:8116 Shugo <> SetTheory.B var
+R8125:8127 Shugo SetTheory :::x_'∩'_x not
+R8124:8124 Shugo <> SetTheory.A var
+R8128:8128 Shugo <> SetTheory.B var
+R8134:8134 Shugo <> SetTheory.A var
+R8272:8280 Shugo <> in_or_not thm
+R8295:8303 Shugo <> in_or_not thm
+R8305:8305 Shugo <> SetTheory.B var
+R8295:8303 Shugo <> in_or_not thm
+R8305:8305 Shugo <> SetTheory.B var
+R8323:8334 Shugo <> Union_intror constr
+R8323:8334 Shugo <> Union_intror constr
+R8345:8362 Shugo <> Intersection_intro constr
+R8345:8362 Shugo <> Intersection_intro constr
+R8389:8400 Shugo <> Union_introl constr
+R8389:8400 Shugo <> Union_introl constr
+R8534:8535 Shugo <> In def
+R8547:8554 Shugo <> Setminus def
+var 8643:8643 SetTheory K
+def 8662:8664 <> Fam
+R8670:8673 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8674:8678 Shugo <> Shugo syndef
+R8669:8669 Shugo <> SetTheory.K var
+ind 8692:8697 <> UnionF
+constr 8719:8730 <> unionf_intro
+R8702:8704 Shugo <> Fam def
+R8708:8712 Shugo <> Shugo syndef
+R8742:8742 Shugo <> SetTheory.U var
+R8749:8749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8775:8779 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8781:8786 Shugo SetTheory :::x_'∈'_x not
+R8795:8795 Shugo SetTheory :::x_'∈'_x not
+R8787:8792 Shugo <> UnionF ind
+R8794:8794 Shugo <> X var
+R8780:8780 Shugo <> x var
+R8750:8756 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8760:8762 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8774:8774 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8759:8759 Shugo <> SetTheory.K var
+R8764:8769 Shugo SetTheory :::x_'∈'_x not
+R8773:8773 Shugo SetTheory :::x_'∈'_x not
+R8770:8770 Shugo <> X var
+R8772:8772 Shugo <> n var
+R8763:8763 Shugo <> x var
+ind 8809:8814 <> InterF
+constr 8836:8847 <> interf_intro
+R8819:8821 Shugo <> Fam def
+R8825:8829 Shugo <> Shugo syndef
+R8859:8859 Shugo <> SetTheory.U var
+R8866:8866 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8892:8896 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8898:8903 Shugo SetTheory :::x_'∈'_x not
+R8912:8912 Shugo SetTheory :::x_'∈'_x not
+R8904:8909 Shugo <> InterF ind
+R8911:8911 Shugo <> X var
+R8897:8897 Shugo <> x var
+R8876:8876 Shugo <> SetTheory.K var
+R8881:8886 Shugo SetTheory :::x_'∈'_x not
+R8890:8890 Shugo SetTheory :::x_'∈'_x not
+R8887:8887 Shugo <> X var
+R8889:8889 Shugo <> n var
+R8880:8880 Shugo <> x var
+prf 8923:8932 <> mem_unionf
+R8944:8946 Shugo <> Fam def
+R8958:8958 Shugo <> SetTheory.K var
+R8964:8964 Shugo SetTheory :::x_'⊆'_x not
+R8968:8973 Shugo SetTheory :::x_'⊆'_x not
+R8965:8965 Shugo <> F var
+R8967:8967 Shugo <> n var
+R8974:8979 Shugo <> UnionF ind
+R8981:8981 Shugo <> F var
+R9019:9030 Shugo <> unionf_intro constr
+R9019:9030 Shugo <> unionf_intro constr
+prf 9063:9072 <> mem_interf
+R9084:9086 Shugo <> Fam def
+R9098:9098 Shugo <> SetTheory.K var
+R9104:9104 Shugo SetTheory :::x_'⊆'_x not
+R9113:9119 Shugo SetTheory :::x_'⊆'_x not
+R9123:9123 Shugo SetTheory :::x_'⊆'_x not
+R9105:9110 Shugo <> InterF ind
+R9112:9112 Shugo <> F var
+R9120:9120 Shugo <> F var
+R9122:9122 Shugo <> n var
+R9276:9284 Shugo SetTheory <> sec
+R9341:9344 Coq.Logic.Classical_Prop <> NNPP thm
+R9371:9394 Shugo <> Extensionality_Ensembles prfax
+R9403:9410 Shugo <> Same_set def
+R9439:9446 Shugo <> Included def
+R9477:9478 Shugo <> In def
+not 9465:9465 <> :::x_'∈'_x
+R9539:9546 Shugo <> Included def
+not 9527:9527 <> :::x_'⊆'_x
+R9608:9612 Shugo <> Union ind
+not 9595:9595 <> :::x_'∪'_x
+R9677:9688 Shugo <> Intersection ind
+not 9665:9665 <> :::x_'∩'_x
