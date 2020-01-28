@@ -5,6 +5,10 @@
   情報が古くなっている可能性もあり，憶測もあるので参考にする際は自己責任でお願いします．
 
 
+[vim/vim](https://github.com/vim/vim) も一緒に見ると良かったりするかもしれない  
+バージョンは適切なのを見たほうがいい． `v8.1.2424` とか
+
+
 ## 目標/目的
 
 - OSS の読み方を勉強
@@ -39,8 +43,24 @@ http://lua-users.org/wiki/BindingCodeToLua
 
 狙ったものだけテストする
 
+### lua の場合
+
 ```
 env TEST_FILTER="Special" make functionaltest
+env TEST_FILTER="msgpack" make functionaltest
+```
+
+lua で書かれたテストは `test/` に，
+viml で書かれたテストは `src/nvim/testdir` (vim では `src/testdir`) 配下にある
+
+
+### viml の場合
+
+```
+# 全部
+make oldtest
+# 1つ
+make oldtest TEST_FILE=test_{}.vim
 ```
 
 
@@ -76,6 +96,14 @@ TYPVAL_ENCODE_NAME
   - `nothing` : 内部で初期値うめ (ガベージコレクト的な) に使うみたい？
 - `src/nvim/lua/converter.c`
   - `lua` : lua の値に変換． userdata への変換もここでする
+
+
+ちなみに `"" . v:null` の時に使われる文字列への変換は
+`tv_get_string_buf_chk` という関数で行われる．
+
+`/// Get the string value of a "stringish" VimL object.`
+と書いてあり，まあ，`string`の文脈で使われたけど`string`じゃないものを扱うのは
+別の方法ってことらしい ?
 
 
 ## src/nvim/lua/executor.c
