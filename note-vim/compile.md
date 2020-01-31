@@ -16,5 +16,3 @@ sudo update-alternatives --install $(which vim) vim ~/bin/vim/$version/bin/vim 6
 sudo update-alternatives --set vim ~/bin/vim/$version/bin/vim
 ```
 
-sudo update-alternatives --install $(which vim) vim ~/bin/vim/${{ version }}/bin/vim 50
-
