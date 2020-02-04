@@ -8,7 +8,7 @@
 - SSHキーがあるか確認
 
 ```bash
-$ ls -al ~/.ssh
+$ ls -Al ~/.ssh
 id_rsa.pub # これとかが出ればいい
 ...
 ```
