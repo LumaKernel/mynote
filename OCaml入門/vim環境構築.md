@@ -61,6 +61,6 @@ Coqのrepoなら `make camldevfiles` とかしてみたんだけど， `src` 配
 
 Cより乏しく感じるのはなんともなあ
 
-CocRestart をバチバチ撃ちまくるのがいいのかどうか
+CocRestart をバチバチ撃ちまくるのがいいのかどうか --> 全然乏しくなんかなかった！
 
 
