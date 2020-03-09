@@ -5,7 +5,7 @@
 ```
 cd ~
 git clone https://github.com/vim/vim /tmp/vim
-cd vim
+cd /tmp/vim
 branch={{ ... }}
 version={{ ... }}
 git checkout v$branch
