@@ -1,11 +1,19 @@
 Release で自分用にビルドするやつ
 ついでに compiled by も変更する
 
+## 準備
+
+```
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip -y
+```
+
+
 neovimをcloneして，
 
 ```
-make USERNAME=luma HOSTNAME=
-sudo make install CMAKE_BUILD_TYPE=Release
+# make distclean
+make USERNAME=luma HOSTNAME= CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
 ```
 
 これで `/usr/local/bin` とかによしなに入れてくれて， `plugin` とかもちゃんとパスが通る (大事)
