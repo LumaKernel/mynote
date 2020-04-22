@@ -59,5 +59,11 @@ git for-each-ref --sort=-committerdate
 ```
 
 
+## レシピ集
+
+```git
+$ git push origin --delete nyan  # nyanブランチをリモートから削除
+$ git remote prune origin --dry-run  # いらないトラッキングブランチを表示
+```
 
 
