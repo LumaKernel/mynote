@@ -1,5 +1,4 @@
-
-## 読み終えた
+## Done
 
 - https://employment.en-japan.com/engineerhub/entry/2018/08/10/110000
   - 仕事でCoqを使っている人の記事
@@ -15,17 +14,19 @@
     - 証明と対応しているということは，この集合のような構造は，論理学で勝手に輸入されてしまっていたということだろうか
 
 
-## まだ読み終えてない，理解していない
+## Reading
 
+- http://proofcafe.org/sf/toc.html
+  - Now:
+
+## To Read
+
+- https://www.slideshare.net/yoshihiromizoguchi/20150218tutorial-44796812
 - https://staff.aist.go.jp/reynald.affeldt/ssrcoq/coq-jssst2014.pdf
   - 定理証明支援系 Coq 入門 SSReflect 中心
   - 非常に理論側に近いと思うが，難しい
   - 依存型っていうのは，値に依存して出力型が決まる，ということ
-
-
-## TO READ
-
-- https://www.slideshare.net/yoshihiromizoguchi/20150218tutorial-44796812
+  - いや結局よくわからない
 - http://proofcafe.org/sf/toc.html
   - ペンシルバニア大学の
   - 練習問題も豊富で良さそう
