@@ -24,16 +24,30 @@ sudo make install
 例えば，
 
 ```
-git checkout nightly
 git pull origin nightly
+git checkout nightly
 make CMAKE_BUILD_TYPE=RelWithDebInfo USERNAME=luma HOSTNAME=
-make install CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=~/.local/build/nvim/nightly
+make install CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=$HOME/.local/build/nvim/nightly
 
-sudo update-alternatives --install $HOME/.local/bin/nvim nvim ~/.local/build/nvim/nightly/bin/nvim 10
+sudo update-alternatives --install $HOME/.local/bin/nvim nvim $HOME/.local/build/nvim/nightly/bin/nvim 10
 ```
 
 (
 `~/.local/build/{コマンド}/{バージョン}` にビルドして
 `~/.local/bin/{コマンド}` にバイナリを置く、という運用の場合
 )
+
+
+
+```
+docker run --rm -it ubuntu
+apt-get update
+apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip git -y
+git clone https://github.com/neovim/neovim --branch v0.4.3 --depth 1
+cd neovim
+make CMAKE_BUILD_TYPE=Release
+./build/bin/nvim --version
+make install
+nvim --version
+```
 
