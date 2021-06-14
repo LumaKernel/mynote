@@ -217,7 +217,7 @@ cni0: error fetching interface information: Device not found
 よさ
 
 ```
-work@master0:~$ kubectl get pods -owide
+work@master0:~$ kubectl get pods -o wide
 NAME                                  READY   STATUS    RESTARTS   AGE    IP           NODE      NOMINATED NODE   READINESS GATES
 kubernetes-bootcamp-fb5c67579-m62fg   1/1     Running   0          137m   10.244.0.7   master0   <none>           <none>
 kubernetes-bootcamp-fb5c67579-pz56t   1/1     Running   0          18s    10.244.4.3   worker0   <none>           <none>
@@ -303,3 +303,104 @@ Percentage of the requests served within a certain time (ms)
 ```
 kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
 ```
+
+## admin account
+
+
+```
+cat <<'EOF' > admin-account.yml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-cluster-admin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin
+  namespace: default
+EOF
+
+
+kubectl get secrets "$(kubectl get sa/admin -o go-template='{{ (index .secrets 0).name }}')" -o go-template='{{ .data.token | base64decode }}' && echo
+```
+
+## dashboard
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
+```
+
+## curl
+
+```
+kubectl run --rm -it --restart=Never --image-pull-policy=IfNotPresent --image=docker.io/radial/busyboxplus:curl bb
+
+kubectl run --rm -it --restart=Never --image-pull-policy=IfNotPresent --image=docker.io/library/ubuntu ubu
+```
+
+## crictl
+
+```
+sudo crictl -r unix:///var/run/crio/crio.sock images
+```
+
+
+## CRI-O
+
+### 注意点
+
+- `/etc/cni/net.d/10-crio...` などを自動で作るかもしれないが、消しておかないと flannel より優先されてしまう。
+  - このとき、他のノードから Kube DNS などにアクセスできなくなってしまう
+- image 名は `docker.io/` を 、docker hubの場合は prepend する必要がある。
+
+
+## 再構築にかかる時間
+
+destroy -> apply -> kubeadm init 完了
+
+開始: Mon Jun  7 23:44:45 JST 2021
+終了: Mon 07 Jun 2021 02:51:33 PM UTC
+
+7分弱?
+
+
+## IPV6対応
+
+対応中に全然うまく行かず参照したページ一覧
+
+- official k8s document
+  - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/dual-stack-support/
+  - https://kubernetes.io/docs/concepts/services-networking/dual-stack/
+  - https://kubernetes.io/docs/tasks/network/validate-dual-stack/
+- calico
+  - https://docs.projectcalico.org/getting-started/kubernetes/self-managed-onprem/onpremises
+  - https://docs.projectcalico.org/networking/ipv6
+  - https://www.projectcalico.org/enable-ipv6-on-kubernetes-with-project-calico/
+  - https://www.projectcalico.org/dual-stack-operation-with-calico-on-kubernetes/
+- va linux
+  - https://valinux.hatenablog.com/entry/20200722
+  - https://www.valinux.co.jp/technologylibrary/document/orchestration/kubernetes/
+- others
+  - https://medium.com/@elfakharany/how-to-enable-ipv6-on-kubernetes-aka-dual-stack-cluster-ac0fe294e4cf
+
+
+
+トラブルシュート
+
+- `kubeclt get node -o yaml | grep -i internalip -C 3` で ipv6 アドレスが表示されない
+  - https://github.com/kubernetes/kubeadm/issues/203
+  - `--node-ip=<ipv4>,<ipv6>` を kubelet の設定に食わせた。 `/etc/default/kubelet` かな。
+  - `<ipv4>` の方は private ip (ens7)、 `<ipv6>` のほうは ens7 にはなかったのでとりあえず ens3 のものを。
+  - ens7 は MTU が 1450 に設定しなければいけないことから暗号化されていると勝手に思っているがほんとか。
+  - 
+- ``
+
+

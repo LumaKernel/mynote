@@ -18,3 +18,11 @@ helm install my-release bitnami/redis-cluster
 
 helm pull bitnami/redis-cluster
 ```
+
+### Kubeapps
+
+```
+helm repo add bitnami https://charts.bitnami.com/bitnami
+kubectl create namespace kubeapps
+helm install kubeapps --namespace kubeapps bitnami/kubeapps
+```
