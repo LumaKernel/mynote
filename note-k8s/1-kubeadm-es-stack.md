@@ -23,5 +23,5 @@ spec:
       node.store.allow_mmap: false
 EOF
 
-kubectl apply -f -
+kubectl apply -f es.yml
 ```

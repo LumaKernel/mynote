@@ -1,0 +1,39 @@
+将棋AIで学ぶディープラーニング
+
+
+基本的に本を読むときは gg りながらやりたいのだけど、なんだろう、変なのすごい出てくる。
+
+
++ モンテカルロ木探索(MCTS)
++ 活用と探索のジレンマ
+  - 理論的な研究対象になっている
+
++ UCB1アルゴリズム
+  - https://scrapbox.io/lookmark/B:_Finite-time_Analysis_of_the_Multiarmed_Bandit_Problem*
+  - Maultiarmed Bandit Problem
+  - https://scrapbox.io/lookmark/B:_Multi-armed_bandit_-_Wikipedia
++ UCTアルゴリズム
+  - UCB1をモンテカルロ木探索のノード選択に用いた探索アルゴリズム
+  - 基本
+    - 1. 選択
+    - 2. 展開
+    - 3. プレイアウト
+    - 4. バックアップ
+  - 優先順位
+    - 囲碁の知識、FPU、Progressive Wideninig
+  - 並列化
+    - ルート並列化
+      - ルートのみ情報を共有
+      - pros: 排他制御いらない
+    - ツリー並列化
+      - 子ノードの情報も共有
+      - pros: 効率上がる
+    - Virtual Loss
+      - これすき
+      - 探索するときにとりあえず負けとしてカウントして、勝ったら増やす
+      - 一回負けに傾くので、他のスレッドでは他の選択肢が候補として選ばれやすくなって、
+      - 探索時のロック待ちを減らすことを期待できる
+      - [? なにか強い候補手があるときにめちゃくちゃ探索できるってことがなくなったりはしないんかな、まあそれだけ傾いていれば逆にそれも誤差か]
+    - Leaf Parallelってのもあるみたい
+      - https://scrapbox.io/lookmark/B:_%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%AD%E6%9C%A8%E6%8E%A2%E7%B4%A2_%E4%B8%A6%E5%88%97%E5%8C%96%E3%80%81%E5%9B%B2%E7%A2%81%E3%80%81%E3%83%9E%E3%83%AA%E3%82%AAAI
+      - プレイアウトの並列化
