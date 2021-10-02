@@ -1,0 +1,28 @@
+- Cargo.toml (non-workspace) --> 1 pacakge
+- package --> n crates --> 1 (main) module --> n modules
+
+- source file (.rs) --> 1 module
+- mod XXX { ... } 宣言 --> 1 module
+
+- 各 module は 0 個以上の crate に属する
+  - 1個以下とは限らない (ただ、2個以上は避けたほうがよさそう; lib 以外では use <package name>::... を使おう)
+  - `crate::` を使う場合、それらすべての解釈で整合する必要あり
+
+- extern crate <crate>; --> 自 module の (module private の) 子供に
+- use <crate>[::<module>...][::<member>];  --> 自 module の (module privateの) 子供に
+- mod <module>;  --> 自 module の子供 (module private) に。更に mod 先は同 crate 、子 module としてご招待
+  - 招待特典
+    - 同一視点の crate:: をプレゼント
+    - その module 直下のものは private でも見えるように
+
+- module private (造語) とは、その module の子孫からのみ可視
+  - pub 付加でそれぞれ、他 module (子孫以外), 他 crate からも可視
+
+- <path>/<name>.rs からは <path>/<name>/*.rs, <path>/*.rs (と <path>/*/mod.rs) が可視
+
+
+- (デフォルトで) lib.rs, main.rs, bin/*.rs が crate の起点を作る
+  - module の文脈での特別視はない
+- src/lib.rs がそのパッケージを追加したときに見える crate
+
+

@@ -49,7 +49,7 @@ EOF
 
 kubectl create namespace kubeapps
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install kubeapps --namespace -f ./kubeapps-values.yml kubeapps bitnami/kubeapps
+helm install --namespace kubeapps -f ./kubeapps-values.yml kubeapps bitnami/kubeapps
 
 
 # Upgrade
